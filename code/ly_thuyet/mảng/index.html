@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        MẢNG: là một kiểu dữ liệu trong jS dùng để chứa nhiều giá trị khác nhau.
+        I- primitive: kiểu dữ kiệu nguyên thủy
+            (number, string, boolean, null, undefined, NaN)
+        II- reference type: kiểu dữ liệu phức tạp
+            -Array
+            -function
+            -object
+        III- 
+        1. cách khai báo mảng:
+            1.let + tên mảng = [giá trị];
+            2. let = tên mảng = new+tên mảng()
+            ngăn cách bằng dấu phẩy
+        2. CRUD vs mảng bằng cách dùng các phương thức làm việc vs mảng
+            thuộc tính: -leng= độ daig or các phần tử tromg mảng
+            C: create thêm phân tử mới vào mảng
+                + put() : thêm phần tử ms
+                + unshift : phương thức thêm đàu 
+                + splice(vị trí, số phần tử cần xóa, phần tử cầm thrr) : 
+            R: read : đọc hay lấy thoomh tin tù mảng
+                dùng vòng lặp lấy ra  các phần tử trong mảng
+                    1. for
+                    2. for-in (): trả về index 
+                    3. for-of (): trả giá trị
+
+            U: update: cập nhật
+                + dùng splice 
+                + dùng index = giá trị mới
+            D: delete: 
+                + pop(): xóa phần tử cuối
+                + shif(): xóa phần tử đầu
+                splice() : xóA VỊ TRÍ 
+        3. các phương thức làm việc vs mảng
+           + reverse()  : đảo ngược các phần tử
+           + join()     : gộp các phần tử trong mảng thành chuỗi
+           + slice      : sao chép ra mảng mói, cắt mảng
+           + indexof    : kiển tra phần tử có trong mảng hay không
+           + includes   : kiểm tra phần tử có trong mảng ko trả về TRUE/FALSE
+           + concat     : gộp mảng
+           + sort       : sắp xếp các phần tử trong mảng theo ASSCI
+           + filter     : lọc
+           + map        : duyệt mảng tả về số phần tuwrbawngf số phần từ ban đầu
+           +forEach     : duyệt mảng tương tác riuwcj tiếp các phần tử trong mảng
+           + reduce()   : tính toán
+        4. phương thức làm việc vs chuỗi
+            + split : cắt chuỗi thành mảng
+            + charAt : lấy kí tự thứ index
+            + có thể du gf foi
+           + trim(): loại bỏ khoảng trắng 
+    -->
+    <script>
+        let students =["hoa", "hồng"];
+        students.push("hương");
+        students.unshift("hoa");
+        students.splice(1, 0, "hiene");
+
+    </script>
+</body>
+</html>

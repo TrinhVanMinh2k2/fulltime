@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+         var random = Math.ceil(Math.random()*10);  //tạo số ngẫu nhiên từ 1-10//
+        console.log(random);
+         let count = 1;
+         let number = +prompt("mời bạn nhập số");
+         while (count <3) {
+            if (number>10 || number<1) {
+               alert("số bạn nhập phải trong khoảng 1-10:"); 
+               count++;
+               number = +prompt("mời bạn nhập số");
+            } else if (number>random) {
+                number = +prompt(`mời bạn nhập số nhỏ hơn ${number}`);
+                count++;
+            } else if (number<random){
+                number = +prompt(`mời bạn nhập số lớn hơn ${number}`);
+            } else if (number=random) {
+                alert("bạn đã đoán đúng");
+                break;
+            }
+            if (count == 3) {
+                alert("bạn hết lượt chơi");
+            }
+         }
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        vòng lặp for
+        -giúp thực hiện lệnh lặp đi lặp lại theo tuần tự 
+        -I for: dùng khi biết trc số lần lặp
+        
+        -cấu trúc cơ bản
+            phần 1: giá trị khởi tạo 
+            phần 2: điều kiện lặp
+            phần 3: bước nhảy
+            -các phần ngăn cách bằng dấu chấm phẩy
+            -cách thực thi: lấy giá trị khởi tạo r so sánh vs đk nếu thỏa mãn đk thì chạy phần thân for sau đó quay về bước nhảy
+            nếu đk sai thì dừng chương trình.
+        -các từ khóa lệnh hay dùng
+            1. continue: bỏ qua lần lặp
+                for lồng: chạy khởi tạo và điều kiện for ngoài r chày theo tuần từ for trong sau đó đến bước nhảy for ngoài
+
+            2. break: thoát khỏi vòng lặp
+            3. 
+        II while
+
+
+        III do-while
+
+    -->
+
+    <script>
+
+        for (let i = 0; i < 5; i++){
+            console.log("i=",i);
+            //thực thi
+        }
+
+        console.log("in ra các số chẵn từ 0-10");
+        for (let i = 0; i < 10; i+=2){
+            console.log("i=",i);
+        }
+
+        console.log("rút ngắn vòng lặp");
+        for (let i = 0; i < 10; i+=2){
+            if(i%2==0){
+                console.log("i=",i);
+            }
+        }
+        console.log("");
+
+        for (let i = 0; 1<10; i++){
+            if(i%2!=0){
+                continue;//quay về bước nhảy luôn bỏ qua phía sau
+            }else{
+                console.log(i);
+            }
+        }
+        console.log("");
+
+        //for (let i = 0; 1<10; i++){
+        //    if(i%2!=0){
+        //        break;//dừng luôn chương trình
+        //    }else{
+        //        console.log(i);
+        //    }
+        //}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [5,10,15,20,25];
+        console.log(arr);
+        let a = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i]>a) {
+                a = arr[i];
+            }
+            
+        }
+        console.log("Giá trị lớn nhất trong mảng là",a);
+        let sum = 0;
+        for (const b of arr) {
+            sum += b;
+        }
+        let avg = sum / arr.length;
+        console.log("số trung bình là:",avg);
+
+    </script>
+</body>
+</html>

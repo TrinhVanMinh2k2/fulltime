@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>do-while</title>
+</head>
+<body>
+    <script>
+        //let a=0;
+        //do {
+        //    //thực thi sau đó ms kiểm tra đk
+        //    //chạy iys nhất 1 lần.
+        //    console.log(a);
+        //    a++;
+        //} while (a<10);
+        
+       let maThe ="2526";
+       let number=+prompt("nhập mã thẻ");
+       let count = 0;
+        do {
+            if (maThe==number) {
+                break;
+            } else {
+                number=+prompt("nhập lại:2");
+                count++;
+            } {
+                number=+prompt("nhập lại:1");
+                count++;
+            } {
+                alert("bạn nhập quá lần");
+            } 
+        } while (count<2);
+    </script>
+</body>
+</html>

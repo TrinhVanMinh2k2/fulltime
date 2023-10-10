@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        I.Hàm
+            - là một nhóm câu lệnh thực hiện một nhiệm vụ nhất định
+            - có thể tái sử dụng
+        II.Cách khai báo hàm, các loại hàm, cách thực thi
+            1. declaration : hàm bình thường
+            2. expression function
+            3. arrow function : hàm mũi tên
+            ==> tên Function đặt theo camel-case
+        III.Return tron hàm
+            -dùng để dừng hàm
+            -kết quả trả về của hàm
+        IV.Phạm vi của biến
+            -vị trí khai báo: + nếu khai báo ở global thì dùng ở đâu cx đc 
+                              + nếu khai báo  let , const khai báo ở block-scope thì vị trí ở block-scope
+                              + nếu var khia báo function thì chỉ phạm vi function
+                              + khi khai báo ở trong function thì var hoisting đưa lên đầu function
+
+        V. tham số , đối số
+            1. tham số
+                - nhận về  
+            2. đối số
+                -khi gọi hàm truyền cho nó giá trị
+        VI. đệ quy
+            -hàm tự gọi lại chính nó
+        VII. callback
+            -hàm đc truyện vào lm đối số của hàm khác
+            -một trong những cách để xử lý bất đồng bộ
+            -
+    -->
+
+    <script>
+        /// DECLARATION
+        function tenFunction() {
+            // thực thi
+        }
+        // muốn cho hàm thực thi phải gọi  hàm(call)
+        tenFunction();
+        // gọi trc hay sau đều đc
+
+
+        /// EXPRESSION FUNCTION
+        let result = function name() {
+            // thực thi
+        };
+        result();
+        //bắt buộc gọi sau khai báo
+
+
+        /// ARROW FUNCTION
+        //gọn gàng ngắn gọi, bắt buộc gọi sau khi khai báo
+        // ko có CONTEXT (liên quan đến từ "this")
+
+         let a = ()=>{
+            //thực thi
+         };
+         a(); //gọi hàm 
+
+         /// tham số
+
+
+
+         ///đệ quy
+         //function deQuy(a) {
+         //   if (a==1) return 1;
+         //       
+         //   return a + deQuy(--a);
+         //}
+         //console.log(deQuy(10));
+
+
+            // callback
+
+        function getData(callback) {
+            setTimeout(() => {// ẩn sau thời gian bao nhiêu thì hiện
+                let data = 112
+                callback(data)
+            }, 5000); ///mili giây
+            console.log("hiển thị data");
+
+        } function showData(data) {
+            console.log(`có ${data} đi hiển thị`);
+        }
+        getData(showData);
+        
+    </script>
+</body>
+</html>

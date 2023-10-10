@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function chuInHoa(str) {
+            let a = str.toLowerCase().split(" ");// lỗi do ko có dấu cách ở split
+            for (let i = 0; i < a.length; i++) {
+
+                a[i] = a[i][0].toUpperCase() + a[i].slice(1);
+                // trong mảng a tìm i  tại vị trí index =0 thì uppercase  + trong mảng a tìm i có index =1 thì quay lại in thường
+                
+            }
+            return a.join(" ");
+        }
+        let b = "hELLo xiNCHao";
+        
+        console.log(chuInHoa(b));
+    </script>
+</body>
+</html>

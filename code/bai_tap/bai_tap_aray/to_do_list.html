@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = prompt("mời nhập lệnh");
+        let todoList = ["Go to bed at 11pm", "Do homework at 8pm"];
+        
+        if (num == "C") {
+             num = prompt("nhập todo mới");
+             todoList.push(num);
+             document.write(todoList.join("<br>"));
+        }
+        else if (num == "R") {
+            document.write(todoList.join("<br>"));
+        }
+        else if (num == "U") {
+            num = +prompt("bạn muốn update ở vị trí nào?");
+            text = prompt("nội dung muốn update:");
+            todoList.splice(num, 1, text);
+            document.write(todoList.join("<br>"));
+        }
+        else if (num == "D"){
+            num = +prompt("chọn vị trí bạn muốn xóa");
+            todoList.splice(num, 1);
+            document.write(todoList.join("<br>"));
+        }
+    </script>
+</body>
+</html>

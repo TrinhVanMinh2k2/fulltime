@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [];
+        while (arr.length<3) {
+            let num = +prompt("nhập số 1");
+            if (Number.isInteger(num)) {
+                if (arr.indexOf(num) == -1) {
+                   arr.push(num); 
+                } else {
+                    num = prompt("nhập lại số nguyên khác ");
+                }
+            } else {
+                num = prompt("nhập lại số nguyên");
+            }
+        }
+        console.log(arr);
+    </script>
+</body>
+</html>

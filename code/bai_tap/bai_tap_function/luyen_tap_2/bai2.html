@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let r = +prompt("nhập bán kính hình tròn");
+        function dienTich(a) {
+            let S = 0;
+            S = a*a*3.14
+            return S;
+        }
+        function chuVi(b) {
+            let C = 0;
+            C = b*2*3.14;
+            return C
+        }
+        dienTich(r)
+        document.write("Diện tích hình tròn là: ", dienTich(r));
+        document.write("<br> Chu vi hình tròn là: ", chuVi(r));
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [];
+        for (let i = 0; i < 10; i++) {
+            let a = +prompt("nhập số");
+            arr.push(a);
+        };
+        console.log(arr);
+        let a = arr[0];
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j]>a) {
+                a=arr[j];
+            }
+        }
+        console.log("số lớn nhất là:",a);
+        console.log("số lớn nhất ở vị trí thứ:",arr.indexOf(a));
+
+    </script>
+</body>
+</html>

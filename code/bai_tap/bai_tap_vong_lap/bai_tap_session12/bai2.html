@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("nhập nhiệt độ");
+        let count = 0;
+        while (count<3) {
+           if (20<a<100) {
+                console.log(`nhiệt độ là ${a}`);
+                
+           }
+                if (a < 20) {
+                    console.log("vui lòng tăng nhiệt");
+                    a = +prompt("tăng nhiệt độ");
+                    count++;
+                }
+                if (a>100) {
+                    console.log("vui lòng giảm nhiệt độ");
+                    a = +prompt("giảm nhiệt độ");
+                    count++;
+                }
+           } 
+    </script>
+</body>
+</html>

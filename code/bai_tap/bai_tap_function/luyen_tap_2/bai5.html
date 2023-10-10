@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let count = 1;
+        let arr = [];
+        for (let i = 0; i < 3; i++) {
+            let a = +prompt(`nhập số thứ ${count}`);
+            arr.push(a);
+            count++ 
+        }
+        console.log(arr);
+
+        function min(params) {
+            let max = params[0];
+            for (let i = 1; i < params.length; i++) {
+                if(params[i] < max) {
+                    max = params[i];
+                }
+            }
+            return max;
+        }
+        min(arr)
+        console.log("số nhỏ nhất là",min(arr));
+    </script>
+</body>
+</html>

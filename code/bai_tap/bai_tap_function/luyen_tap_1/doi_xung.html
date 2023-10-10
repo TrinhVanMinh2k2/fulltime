@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let arr =  prompt("nhập chuỗi")
+    
+    
+    function kiemTra() {
+        let b = arr.split("").reverse().join("");
+        if (b == arr) {
+           return true ;
+        }
+        return false;
+    }
+    if (kiemTra()) {
+        console.log("số đối xứng");
+    } else {
+        console.log("số không đối");
+    }
+   </script> 
+</body>
+</html>
